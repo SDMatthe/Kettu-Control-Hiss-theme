@@ -1,0 +1,316 @@
+{
+  "name": "Control Hiss",
+  "description": "theme based on the hiss from control",
+  "version": "1",
+  "authors": [
+    {
+      "name": "litecroissant"
+    }
+  ],
+  "semanticColors": {
+    "BACKGROUND_ACCENT": [
+      "#FF0000"
+    ],
+    "BACKGROUND_BRAND": [
+      "#FF0000"
+    ],
+    "MENTION_FOREGROUND": [
+      "#FF0000"
+    ],
+    "TEXT_LINK": [
+      "#FF0000"
+    ],
+    "INTERACTIVE_ACTIVE": [
+      "#FF0000"
+    ],
+    "INTERACTIVE_HOVER": [
+      "#FF0000"
+    ],
+    "CHANNELS_DEFAULT": [
+      "#FF0000"
+    ],
+    "CHANNEL_ICON": [
+      "#FF0000"
+    ],
+    "HEADER_SECONDARY": [
+      "#FF0000"
+    ],
+    "INTERACTIVE_MUTED": [
+      "#FF0000"
+    ],
+    "REDESIGN_CHANNEL_CATEGORY_NAME_TEXT": [
+      "#FF0000"
+    ],
+    "TEXT_MUTED": [
+      "#FF0000"
+    ],
+    "ANDROID_NAVIGATION_SCRIM_BACKGROUND": [
+      "#080808"
+    ],
+    "CHAT_BACKGROUND": [
+      "#080808"
+    ],
+    "BACKGROUND_MOBILE_PRIMARY": [
+      "#080808"
+    ],
+    "BACKGROUND_PRIMARY": [
+      "#080808"
+    ],
+    "BG_BASE_PRIMARY": [
+      "#080808"
+    ],
+    "HOME_BACKGROUND": [
+      "#080808"
+    ],
+    "STATUS_DANGER_TEXT": [
+      "#080808"
+    ],
+    "BACKGROUND_FLOATING": [
+      "#0D0D0D"
+    ],
+    "BACKGROUND_MOBILE_SECONDARY": [
+      "#0D0D0D"
+    ],
+    "BACKGROUND_NESTED_FLOATING": [
+      "#0D0D0D"
+    ],
+    "BACKGROUND_SECONDARY": [
+      "#0D0D0D"
+    ],
+    "BACKGROUND_SECONDARY_ALT": [
+      "#0D0D0D"
+    ],
+    "BACKGROUND_SURFACE_RAISED": [
+      "#0D0D0D"
+    ],
+    "BACKGROUND_TERTIARY": [
+      "#0D0D0D"
+    ],
+    "BG_BASE_SECONDARY": [
+      "#0D0D0D"
+    ],
+    "BG_BASE_TERTIARY": [
+      "#0D0D0D"
+    ],
+    "BG_SURFACE_OVERLAY": [
+      "#0D0D0D"
+    ],
+    "BG_SURFACE_OVERLAY_TMP": [
+      "#0D0D0D"
+    ],
+    "BG_SURFACE_RAISED": [
+      "#0D0D0D"
+    ],
+    "CARD_PRIMARY_BG": [
+      "#0D0D0D"
+    ],
+    "CARD_SECONDARY_BG": [
+      "#0D0D0D"
+    ],
+    "CHANNELTEXTAREA_BACKGROUND": [
+      "#0D0D0D"
+    ],
+    "EMBED_BACKGROUND": [
+      "#0D0D0D"
+    ],
+    "INPUT_BACKGROUND_DEFAULT": [
+      "#0D0D0D"
+    ],
+    "KEYBOARD": [
+      "#0D0D0D"
+    ],
+    "PANEL_BG": [
+      "#0D0D0D"
+    ],
+    "POLLS_NORMAL_FILL_HOVER": [
+      "#0D0D0D"
+    ],
+    "POLLS_NORMAL_IMAGE_BACKGROUND": [
+      "#0D0D0D"
+    ],
+    "REDESIGN_ACTIVITY_CARD_BACKGROUND": [
+      "#0D0D0D"
+    ],
+    "REDESIGN_ACTIVITY_CARD_BACKGROUND_PRESSED": [
+      "#0D0D0D"
+    ],
+    "REDESIGN_BUTTON_SECONDARY_ALT_BACKGROUND": [
+      "#0D0D0D"
+    ],
+    "REDESIGN_BUTTON_SECONDARY_BACKGROUND": [
+      "#0D0D0D"
+    ],
+    "REDESIGN_BUTTON_TERTIARY_BACKGROUND": [
+      "#0D0D0D"
+    ],
+    "REDESIGN_CHAT_INPUT_BACKGROUND": [
+      "#0D0D0D"
+    ],
+    "HEADER_PRIMARY": [
+      "#FFFFFF"
+    ],
+    "INTERACTIVE_NORMAL": [
+      "#FFFFFF"
+    ],
+    "INTERACTIVE_TEXT_DEFAULT": [
+      "#FFFFFF"
+    ],
+    "REDESIGN_CHANNEL_NAME_TEXT": [
+      "#FFFFFF"
+    ],
+    "TEXT_DEFAULT": [
+      "#FFFFFF"
+    ],
+    "TEXT_NORMAL": [
+      "#FFFFFF"
+    ],
+    "TEXT_PRIMARY": [
+      "#FFFFFF"
+    ],
+    "TEXT_STRONG": [
+      "#FFFFFF"
+    ],
+    "ANDROID_RIPPLE": [
+      "#5b2a82"
+    ],
+    "BACKGROUND_MENTIONED": [
+      "rgba(114,0,0,0.1)"
+    ],
+    "BACKGROUND_MENTIONED_HOVER": [
+      "rgba(170,0,0,0.1)"
+    ],
+    "BACKGROUND_MESSAGE_HOVER": [
+      "#FFFFFF0D"
+    ],
+    "BACKGROUND_MODIFIER_ACCENT": [
+      "#FFFFFF12"
+    ],
+    "BACKGROUND_MODIFIER_ACTIVE": [
+      "#FFFFFF14"
+    ],
+    "BACKGROUND_MODIFIER_HOVER": [
+      "#FFFFFF0F"
+    ],
+    "BACKGROUND_MODIFIER_SELECTED": [
+      "#FFFFFF1A"
+    ],
+    "BACKGROUND_MODIFIER_ACCEPT": [
+      "#43b58133"
+    ],
+    "BACKGROUND_MODIFIER_ACCEPT_HOVER": [
+      "#43b5814d"
+    ],
+    "BACKGROUND_MOD_MUTED": [
+      "#121214"
+    ],
+    "BG_BACKDROP": [
+      "#000000b2"
+    ],
+    "BORDER_FAINT": [
+      "#FFFFFF12"
+    ],
+    "BORDER_SUBTLE": [
+      "#FFFFFF1C"
+    ],
+    "BORDER_STRONG": [
+      "#FFFFFF26"
+    ],
+    "REDESIGN_BUTTON_DANGER_BACKGROUND": [
+      "#7f007b"
+    ],
+    "REDESIGN_BUTTON_SECONDARY_BORDER": [
+      "#FFFFFF1A"
+    ],
+    "SPOILER_HIDDEN_BACKGROUND": [
+      "#000000"
+    ],
+    "STATUS_DANGER": [
+      "#7f007b"
+    ],
+    "STATUS_DANGER_BACKGROUND": [
+      "#7f007b"
+    ],
+    "TEXT_SECONDARY": [
+      "#d79dff"
+    ]
+  },
+  "rawColors": {
+    "BRAND_200": "#FF0000",
+    "BRAND_260": "#FF0000",
+    "BRAND_300": "#FF0000",
+    "BRAND_330": "#FF0000",
+    "BRAND_345": "#FF0000",
+    "BRAND_360": "#FF0000",
+    "BRAND_400": "#FF0000",
+    "BRAND_430": "#FF0000",
+    "BRAND_460": "#FF0000",
+    "BRAND_500": "#FF0000",
+    "BRAND_530": "#FF0000",
+    "BRAND_600": "#FF0000",
+    "BRAND_630": "#FF0000",
+    "BRAND_660": "#FF0000",
+    "BRAND_700": "#FF0000",
+    "PLUM_3": "#FF0000",
+    "PLUM_15": "#FF0000",
+    "PRIMARY_300": "#FF0000",
+    "PRIMARY_360": "#FF0000",
+    "PRIMARY_500": "#FF0000",
+    "PRIMARY_530": "#FF0000",
+    "BRAND_560": "#FF0000",
+    "PRIMARY_400": "#FF0000",
+    "PLUM_9": "#FF0000",
+    "PLUM_10": "#FF0000",
+    "PLUM_11": "#FF0000",
+    "PLUM_13": "#FF0000",
+    "PRIMARY_730": "#FF0000",
+    "ROLE_DEFAULT": "#FF0000",
+    "WHITE_630": "#FF0000",
+    "PLUM_17": "#080808",
+    "PLUM_20": "#080808",
+    "PLUM_24": "#080808",
+    "PLUM_25": "#080808",
+    "PRIMARY_600": "#080808",
+    "PRIMARY_DARK_700": "#080808",
+    "PRIMARY_DARK_800": "#080808",
+    "PLUM_16": "#0D0D0D",
+    "PLUM_19": "#0D0D0D",
+    "PLUM_21": "#0D0D0D",
+    "PLUM_22": "#0D0D0D",
+    "PRIMARY_460": "#0D0D0D",
+    "PRIMARY_630": "#0D0D0D",
+    "PRIMARY_660": "#0D0D0D",
+    "PRIMARY_700": "#0D0D0D",
+    "PRIMARY_DARK_600": "#0D0D0D",
+    "PRIMARY_DARK_630": "#0D0D0D",
+    "PRIMARY_DARK_660": "#0D0D0D",
+    "BRAND_730": "#FFFFFF",
+    "PLUM_1": "#FFFFFF",
+    "PLUM_4": "#FFFFFF",
+    "PLUM_6": "#FFFFFF",
+    "PRIMARY_100": "#FFFFFF",
+    "PRIMARY_200": "#FFFFFF",
+    "PRIMARY_330": "#FFFFFF",
+    "PRIMARY_DARK_200": "#FFFFFF",
+    "WHITE_500": "#FFFFFF",
+    "BLACK_500": "#000000b2",
+    "PLUM_18": "#101012",
+    "PRIMARY_645": "#101012",
+    "PRIMARY_800": "#101012",
+    "GREEN_500": "#43b581",
+    "RED_500": "#7f007b",
+    "ORANGE_500": "#faa61a",
+    "YELLOW_500": "#faa61a"
+  },
+  "plus": {
+    "version": 0,
+    "customOverlays": true,
+    "iconpack": "materialtwotone"
+  },
+  "spec": 2,
+  "background": {
+    "url": "https://static.wikia.nocookie.net/control6745/images/6/69/Hiss_-_Pattern_-_Red.png/revision/latest?cb=20190905070858",
+    "alpha": 0.62,
+    "size": "cover",
+    "position": "center"
+  }
+}
