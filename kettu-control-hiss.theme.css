@@ -1,0 +1,64 @@
+/**
+ * @name Kettu Control Hiss
+ * @author litecroissant
+ * @version 1.0.0
+ * @description Equicord-compatible port of the original Kettu Control Hiss theme.
+ * @source https://github.com/SDMatthe/Kettu-Control-Hiss-theme
+ */
+
+:root {
+  --kettu-hiss-accent: #ff0000;
+  --kettu-hiss-bg-primary: #080808;
+  --kettu-hiss-bg-secondary: #0d0d0d;
+  --kettu-hiss-text-primary: #ffffff;
+  --kettu-hiss-text-secondary: #d79dff;
+  --kettu-hiss-danger: #7f007b;
+  --kettu-hiss-bg-image: url("https://static.wikia.nocookie.net/control6745/images/6/69/Hiss_-_Pattern_-_Red.png/revision/latest?cb=20190905070858");
+
+  --brand-experiment: var(--kettu-hiss-accent);
+  --brand-500: var(--kettu-hiss-accent);
+  --background-accent: var(--kettu-hiss-accent);
+  --background-primary: var(--kettu-hiss-bg-primary);
+  --background-secondary: var(--kettu-hiss-bg-secondary);
+  --background-secondary-alt: var(--kettu-hiss-bg-secondary);
+  --background-tertiary: var(--kettu-hiss-bg-secondary);
+  --background-floating: var(--kettu-hiss-bg-secondary);
+  --channeltextarea-background: var(--kettu-hiss-bg-secondary);
+
+  --text-normal: var(--kettu-hiss-text-primary);
+  --text-primary: var(--kettu-hiss-text-primary);
+  --header-primary: var(--kettu-hiss-text-primary);
+  --channels-default: var(--kettu-hiss-accent);
+  --channel-icon: var(--kettu-hiss-accent);
+  --text-link: var(--kettu-hiss-accent);
+  --interactive-normal: var(--kettu-hiss-text-primary);
+  --interactive-hover: var(--kettu-hiss-accent);
+  --interactive-active: var(--kettu-hiss-accent);
+  --interactive-muted: var(--kettu-hiss-accent);
+  --text-muted: var(--kettu-hiss-accent);
+  --text-secondary: var(--kettu-hiss-text-secondary);
+
+  --background-mentioned: rgba(114, 0, 0, 0.1);
+  --background-mentioned-hover: rgba(170, 0, 0, 0.1);
+  --background-message-hover: #ffffff0d;
+  --background-modifier-accent: #ffffff12;
+  --background-modifier-active: #ffffff14;
+  --background-modifier-hover: #ffffff0f;
+  --background-modifier-selected: #ffffff1a;
+  --background-modifier-success: #43b58133;
+  --background-modifier-success-hover: #43b5814d;
+  --spoiler-hidden-background: #000000;
+  --status-danger: var(--kettu-hiss-danger);
+}
+
+html,
+body,
+#app-mount {
+  background-color: var(--kettu-hiss-bg-primary) !important;
+  background-image:
+    linear-gradient(rgba(8, 8, 8, 0.38), rgba(8, 8, 8, 0.38)),
+    var(--kettu-hiss-bg-image) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-attachment: fixed !important;
+}
