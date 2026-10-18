@@ -10,7 +10,7 @@
   --kettu-hiss-accent: #ff0000;
   --kettu-hiss-bg-primary: #080808;
   --kettu-hiss-bg-secondary: #0d0d0d;
-  --kettu-hiss-text-primary: #ffffff;
+  --kettu-hiss-text-primary: #ff5c5c;
   --kettu-hiss-text-secondary: #d79dff;
   --kettu-hiss-danger: #7f007b;
   --kettu-hiss-bg-image: url("https://static.wikia.nocookie.net/control6745/images/6/69/Hiss_-_Pattern_-_Red.png/revision/latest?cb=20190905070858");
@@ -78,16 +78,15 @@ body,
 #app-mount {
   background-color: var(--kettu-hiss-bg-primary) !important;
   background-image:
-    linear-gradient(rgba(8, 8, 8, 0.38), rgba(8, 8, 8, 0.38)),
+    linear-gradient(rgba(32, 0, 0, 0.52), rgba(32, 0, 0, 0.52)),
     var(--kettu-hiss-bg-image) !important;
   background-size: cover !important;
-  background-position: center !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
   background-attachment: fixed !important;
+  color: var(--kettu-hiss-text-primary) !important;
 }
 /* Remove opaque application-level layers so the Hiss background remains visible */
-html,
-body,
-#app-mount,
 #app-mount > div,
 [class*="app_"],
 [class*="bg_"],
@@ -112,7 +111,7 @@ body,
 [class*="popout_"],
 [class*="autocomplete_"],
 [class*="searchResults_"] {
-  background-color: rgba(13, 13, 13, 0.88) !important;
+  background-color: rgba(13, 8, 8, 0.72) !important;
 }
 
 /* Keep the main content area translucent */
