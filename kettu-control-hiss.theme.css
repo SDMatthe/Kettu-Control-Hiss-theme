@@ -16,14 +16,34 @@
   --kettu-hiss-bg-image: url("https://static.wikia.nocookie.net/control6745/images/6/69/Hiss_-_Pattern_-_Red.png/revision/latest?cb=20190905070858");
 
   --brand-experiment: var(--kettu-hiss-accent);
+  --brand-260: var(--kettu-hiss-accent);
+  --brand-360: var(--kettu-hiss-accent);
+  --brand-430: var(--kettu-hiss-accent);
   --brand-500: var(--kettu-hiss-accent);
+  --brand-560: #cc0000;
+  --brand-600: #990000;
   --background-accent: var(--kettu-hiss-accent);
   --background-primary: var(--kettu-hiss-bg-primary);
   --background-secondary: var(--kettu-hiss-bg-secondary);
   --background-secondary-alt: var(--kettu-hiss-bg-secondary);
   --background-tertiary: var(--kettu-hiss-bg-secondary);
   --background-floating: var(--kettu-hiss-bg-secondary);
-  --channeltextarea-background: var(--kettu-hiss-bg-secondary);
+  --background-base-lowest: var(--kettu-hiss-bg-primary);
+  --background-base-lower: var(--kettu-hiss-bg-primary);
+  --background-base-low: var(--kettu-hiss-bg-secondary);
+  --background-base: var(--kettu-hiss-bg-secondary);
+  --background-base-high: #151515;
+  --background-base-highest: #1c1c1c;
+  --background-surface-high: var(--kettu-hiss-bg-secondary);
+  --background-surface-higher: #151515;
+  --background-surface-highest: #1c1c1c;
+  --background-surface-overlay: rgba(13, 13, 13, 0.94);
+  --bg-surface-raised: var(--kettu-hiss-bg-secondary);
+  --bg-surface-overlay: rgba(13, 13, 13, 0.94);
+  --modal-background: var(--kettu-hiss-bg-secondary);
+  --channeltextarea-background: rgba(13, 13, 13, 0.92);
+  --input-background: #151515;
+  --input-placeholder-text: var(--kettu-hiss-text-secondary);
 
   --text-normal: var(--kettu-hiss-text-primary);
   --text-primary: var(--kettu-hiss-text-primary);
@@ -34,7 +54,7 @@
   --interactive-normal: var(--kettu-hiss-text-primary);
   --interactive-hover: var(--kettu-hiss-accent);
   --interactive-active: var(--kettu-hiss-accent);
-  --interactive-muted: var(--kettu-hiss-accent);
+  --interactive-muted: #8d8d8d;
   --text-muted: var(--kettu-hiss-accent);
   --text-secondary: var(--kettu-hiss-text-secondary);
 
@@ -49,6 +69,8 @@
   --background-modifier-success-hover: #43b5814d;
   --spoiler-hidden-background: #000000;
   --status-danger: var(--kettu-hiss-danger);
+  --button-danger-background: var(--kettu-hiss-danger);
+  --button-danger-background-hover: #a800a2;
 }
 
 html,
@@ -62,40 +84,6 @@ body,
   background-position: center !important;
   background-attachment: fixed !important;
 }
-/* Apply the Hiss palette to newer Discord/Eqicord surface tokens */
-:root {
-  --background-base-lowest: var(--kettu-hiss-bg-primary);
-  --background-base-lower: var(--kettu-hiss-bg-primary);
-  --background-base-low: var(--kettu-hiss-bg-secondary);
-  --background-base: var(--kettu-hiss-bg-secondary);
-  --background-base-high: #151515;
-  --background-base-highest: #1c1c1c;
-
-  --background-surface-high: var(--kettu-hiss-bg-secondary);
-  --background-surface-higher: #151515;
-  --background-surface-highest: #1c1c1c;
-  --background-surface-overlay: rgba(13, 13, 13, 0.94);
-
-  --bg-surface-raised: var(--kettu-hiss-bg-secondary);
-  --bg-surface-overlay: rgba(13, 13, 13, 0.94);
-  --modal-background: var(--kettu-hiss-bg-secondary);
-  --channeltextarea-background: rgba(13, 13, 13, 0.92);
-
-  --input-background: #151515;
-  --input-placeholder-text: var(--kettu-hiss-text-secondary);
-  --interactive-muted: #8d8d8d;
-
-  --brand-260: var(--kettu-hiss-accent);
-  --brand-360: var(--kettu-hiss-accent);
-  --brand-430: var(--kettu-hiss-accent);
-  --brand-500: var(--kettu-hiss-accent);
-  --brand-560: #cc0000;
-  --brand-600: #990000;
-
-  --button-danger-background: var(--kettu-hiss-danger);
-  --button-danger-background-hover: #a800a2;
-}
-
 /* Remove opaque application-level layers so the Hiss background remains visible */
 html,
 body,
@@ -104,8 +92,7 @@ body,
 [class*="app_"],
 [class*="bg_"],
 [class*="layer_"],
-[class*="base_"],
-[class*="wrapper_"] {
+[class*="base_"] {
   background-color: transparent !important;
 }
 
@@ -131,10 +118,9 @@ body,
 /* Keep the main content area translucent */
 [class*="chatContent_"],
 [class*="chatTarget_"],
-[class*="scroller_"],
 [class*="messagesWrapper_"],
-[class*="contentRegion_"],
-[class*="standardSidebarView_"] {
+[class*="messageContent_"],
+[class*="messageListItem_"] {
   background-color: transparent !important;
 }
 
