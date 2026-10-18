@@ -62,3 +62,177 @@ body,
   background-position: center !important;
   background-attachment: fixed !important;
 }
+/* Apply the Hiss palette to newer Discord/Eqicord surface tokens */
+:root {
+  --background-base-lowest: var(--kettu-hiss-bg-primary);
+  --background-base-lower: var(--kettu-hiss-bg-primary);
+  --background-base-low: var(--kettu-hiss-bg-secondary);
+  --background-base: var(--kettu-hiss-bg-secondary);
+  --background-base-high: #151515;
+  --background-base-highest: #1c1c1c;
+
+  --background-surface-high: var(--kettu-hiss-bg-secondary);
+  --background-surface-higher: #151515;
+  --background-surface-highest: #1c1c1c;
+  --background-surface-overlay: rgba(13, 13, 13, 0.94);
+
+  --bg-surface-raised: var(--kettu-hiss-bg-secondary);
+  --bg-surface-overlay: rgba(13, 13, 13, 0.94);
+  --modal-background: var(--kettu-hiss-bg-secondary);
+  --channeltextarea-background: rgba(13, 13, 13, 0.92);
+
+  --input-background: #151515;
+  --input-placeholder-text: var(--kettu-hiss-text-secondary);
+  --interactive-muted: #8d8d8d;
+
+  --brand-260: var(--kettu-hiss-accent);
+  --brand-360: var(--kettu-hiss-accent);
+  --brand-430: var(--kettu-hiss-accent);
+  --brand-500: var(--kettu-hiss-accent);
+  --brand-560: #cc0000;
+  --brand-600: #990000;
+
+  --button-danger-background: var(--kettu-hiss-danger);
+  --button-danger-background-hover: #a800a2;
+}
+
+/* Remove opaque application-level layers so the Hiss background remains visible */
+html,
+body,
+#app-mount,
+#app-mount > div,
+[class*="app_"],
+[class*="bg_"],
+[class*="layer_"],
+[class*="base_"],
+[class*="wrapper_"] {
+  background-color: transparent !important;
+}
+
+/* Restore readable dark surfaces for intentional panels */
+[class*="sidebar_"],
+[class*="content_"],
+[class*="chat_"],
+[class*="members_"],
+[class*="container_"],
+[class*="panel_"],
+[class*="header_"],
+[class*="title_"],
+[class*="form_"],
+[class*="footer_"],
+[class*="modal_"],
+[class*="menu_"],
+[class*="popout_"],
+[class*="autocomplete_"],
+[class*="searchResults_"] {
+  background-color: rgba(13, 13, 13, 0.88) !important;
+}
+
+/* Keep the main content area translucent */
+[class*="chatContent_"],
+[class*="chatTarget_"],
+[class*="scroller_"],
+[class*="messagesWrapper_"],
+[class*="contentRegion_"],
+[class*="standardSidebarView_"] {
+  background-color: transparent !important;
+}
+
+/* Channel and member rows */
+[class*="channel_"],
+[class*="member_"],
+[class*="voiceUser_"],
+[class*="role_"] {
+  color: var(--kettu-hiss-text-primary) !important;
+}
+
+[class*="channel_"]:hover,
+[class*="member_"]:hover,
+[class*="voiceUser_"]:hover {
+  background-color: rgba(255, 0, 0, 0.16) !important;
+}
+
+[class*="modeSelected_"],
+[class*="selected_"],
+[aria-selected="true"] {
+  background-color: rgba(255, 0, 0, 0.26) !important;
+}
+
+/* Accent borders, links, buttons, and controls */
+a,
+[class*="anchor_"],
+[class*="link_"],
+button[class*="lookFilled_"],
+[class*="icon_"][class*="selected_"],
+[class*="folderIcon_"] {
+  color: var(--kettu-hiss-accent) !important;
+}
+
+button[class*="lookFilled_"],
+[class*="button_"][class*="filled_"] {
+  background-color: var(--kettu-hiss-accent) !important;
+  color: #ffffff !important;
+}
+
+button[class*="lookFilled_"]:hover,
+[class*="button_"][class*="filled_"]:hover {
+  background-color: #cc0000 !important;
+}
+
+/* Text inputs and message composer */
+textarea,
+input,
+[class*="textArea_"],
+[class*="channelTextArea_"],
+[class*="scrollableContainer_"] {
+  background-color: rgba(13, 13, 13, 0.94) !important;
+  color: var(--kettu-hiss-text-primary) !important;
+  border-color: rgba(255, 0, 0, 0.35) !important;
+}
+
+/* Dividers and common borders */
+[class*="divider_"],
+[class*="separator_"],
+[class*="border_"] {
+  border-color: rgba(255, 0, 0, 0.28) !important;
+}
+
+/* Message highlighting */
+[class*="mentioned_"] {
+  background-color: rgba(114, 0, 0, 0.22) !important;
+  border-left-color: var(--kettu-hiss-accent) !important;
+}
+
+[class*="mentioned_"]:hover {
+  background-color: rgba(170, 0, 0, 0.3) !important;
+}
+
+/* Make overlays and dialogs retain the theme */
+[role="dialog"],
+[role="menu"],
+[role="listbox"],
+[class*="layerContainer_"] > *,
+[class*="popout_"],
+[class*="menu_"] {
+  background-color: rgba(13, 13, 13, 0.97) !important;
+  border: 1px solid rgba(255, 0, 0, 0.35) !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--kettu-hiss-bg-primary) !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4d0000 !important;
+  border-radius: 4px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--kettu-hiss-accent) !important;
+}
